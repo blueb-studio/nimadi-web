@@ -874,6 +874,140 @@ img {
 }
 
 /* ============================================
+   CONTACT CTA SECTION
+   ============================================ */
+.contact-cta {
+    background: #fbf6ea;
+    padding: 100px 32px;
+}
+
+.contact-cta__container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-cta__label {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-primary, #0c4028);
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+}
+
+.contact-cta__heading {
+    font-family: var(--font-body);
+    font-size: clamp(2rem, 3.5vw, 2.7rem);
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 48px;
+    letter-spacing: -0.01em;
+}
+
+.contact-cta__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: left;
+    background: #ffffff;
+    padding: 48px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #1a1a1a;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary, #0c4028);
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(12, 64, 40, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-cta__submit {
+    margin-top: 12px;
+    background: var(--color-primary, #0c4028);
+    color: #ffffff;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    align-self: center;
+    /* Center the submit button */
+    width: 100%;
+    max-width: 250px;
+}
+
+.contact-cta__submit:hover {
+    background: #082d1b;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contact-cta {
+        padding: 64px 20px;
+    }
+
+    .contact-cta__form {
+        padding: 32px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ============================================
    FLOATING CONTACT BUTTON
    ============================================ */
 .sticky-contact-btn {
