@@ -1449,12 +1449,17 @@ img {
 .footer__subscribe button {
     background: transparent;
     border: none;
-    padding: 0 16px;
+    padding: 0 20px;
     color: #666;
     cursor: pointer;
     display: flex;
     align-items: center;
     transition: color 0.2s ease;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .footer__subscribe button:hover {
