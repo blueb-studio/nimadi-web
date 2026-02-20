@@ -684,7 +684,9 @@ img {
 .features__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .feature-card {
