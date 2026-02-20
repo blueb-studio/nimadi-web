@@ -651,7 +651,7 @@ img {
    ============================================ */
 .features-section {
     background-color: #fbf6ea;
-    background-image: url('processes-bg.png');
+    background-image: linear-gradient(rgba(251, 246, 234, 0.9), rgba(251, 246, 234, 0.9)), url('processes-bg.png');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
