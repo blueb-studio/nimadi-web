@@ -776,7 +776,7 @@ img {
    ============================================ */
 .products-section {
     background: #ffffff;
-    padding: 0 32px 100px;
+    padding: 0 32px 40px;
 }
 
 .products__container {
@@ -810,7 +810,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
-    margin-bottom: 64px;
+    margin-bottom: 20px;
 }
 
 .product-card {
@@ -878,7 +878,7 @@ img {
    ============================================ */
 .contact-cta {
     background: #fbf6ea;
-    padding: 100px 32px;
+    padding: 60px 32px 100px;
 }
 
 .contact-cta__container {
