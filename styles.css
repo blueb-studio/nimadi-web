@@ -669,7 +669,7 @@ img {
     text-transform: uppercase;
     color: var(--color-text);
     letter-spacing: 0.04em;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .features__heading {
@@ -677,7 +677,7 @@ img {
     font-size: clamp(2rem, 3.5vw, 2.7rem);
     font-weight: 700;
     color: #0c4028;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
     letter-spacing: -0.01em;
 }
 
