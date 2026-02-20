@@ -776,7 +776,7 @@ img {
    ============================================ */
 .products-section {
     background: #ffffff;
-    padding: 0 32px 40px;
+    padding: 0 32px 70px;
 }
 
 .products__container {
@@ -878,7 +878,7 @@ img {
    ============================================ */
 .contact-cta {
     background: #fbf6ea;
-    padding: 60px 32px 100px;
+    padding: 85px 32px 100px;
 }
 
 .contact-cta__container {
