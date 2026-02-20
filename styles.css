@@ -874,17 +874,12 @@ img {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    width: 56px;
+    height: 56px;
     background-color: var(--color-primary, #0c4028);
     /* fallback if not set */
     color: #fff;
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 40px;
+    border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 1000;
     transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.3s ease;
@@ -904,8 +899,8 @@ img {
     .sticky-contact-btn {
         bottom: 20px;
         right: 20px;
-        padding: 12px 24px;
-        font-size: 0.8rem;
+        width: 48px;
+        height: 48px;
     }
 }
 
