@@ -249,11 +249,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     color: #1a1a1a;
     border-radius: 4px;
     transition: opacity var(--transition-fast), background var(--transition-fast);
+}
+
+.nav__social-link svg {
+    width: 20px;
+    height: 20px;
 }
 
 .nav__social-link:hover {
