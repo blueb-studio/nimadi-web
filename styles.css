@@ -868,9 +868,9 @@ img {
 }
 
 /* ============================================
-   FLOATING NEWSLETTER BUTTON
+   FLOATING CONTACT BUTTON
    ============================================ */
-.sticky-newsletter-btn {
+.sticky-contact-btn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -893,7 +893,7 @@ img {
     justify-content: center;
 }
 
-.sticky-newsletter-btn:hover {
+.sticky-contact-btn:hover {
     background-color: #082d1b;
     /* darker green hover */
     transform: translateY(-2px);
@@ -901,7 +901,7 @@ img {
 }
 
 @media (max-width: 768px) {
-    .sticky-newsletter-btn {
+    .sticky-contact-btn {
         bottom: 20px;
         right: 20px;
         padding: 12px 24px;
