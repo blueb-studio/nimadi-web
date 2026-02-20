@@ -843,7 +843,7 @@ img {
 .product-card__info {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 0;
 }
 
 .product-card__title {
@@ -858,7 +858,7 @@ img {
     font-size: 0.9rem;
     color: #4a4a4a;
     line-height: 1.5;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .product-card__price {
