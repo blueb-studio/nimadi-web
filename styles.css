@@ -1314,14 +1314,16 @@ img {
 
     /* Hero Mobile */
     .hero {
-        height: auto;
-        min-height: 500px;
+        height: 100vh;
+        min-height: 100vh;
     }
 
     .hero__content {
         flex-direction: column;
         padding: 40px 24px;
         align-items: flex-start;
+        justify-content: center;
+        height: 100%;
         gap: 24px;
     }
 
