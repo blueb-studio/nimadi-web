@@ -1325,7 +1325,8 @@ img {
         justify-content: center;
         text-align: center;
         height: 100%;
-        gap: 24px;
+        gap: 8px;
+        /* Reduced from 24px to move subheading up */
     }
 
     .hero__heading {
