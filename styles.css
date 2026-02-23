@@ -1334,6 +1334,8 @@ img {
 
     .hero__subheading {
         font-size: 0.85rem;
+        text-align: center;
+        width: 100%;
     }
 
     .hero__products {
