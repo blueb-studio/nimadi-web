@@ -70,4 +70,59 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.categories').forEach(el => {
         observer.observe(el);
     });
+    // --- Form AJAX Submissions (FormSubmit) ---
+    const setupFormSubmit = (formId, messageId) => {
+        const form = document.getElementById(formId);
+        const messageDiv = document.getElementById(messageId);
+
+        if (form && messageDiv) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent default redirection
+
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Submitting...';
+                submitBtn.disabled = true;
+
+                const formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                    .then(response => {
+                        if (response.ok || response.status === 200) {
+                            messageDiv.style.display = 'block';
+                            messageDiv.style.color = '#0c4028';
+                            messageDiv.textContent = 'Your Message is Submitted.';
+                            form.reset(); // Clear form fields
+                        } else {
+                            messageDiv.style.display = 'block';
+                            messageDiv.style.color = '#dc3545';
+                            messageDiv.textContent = 'Oops! There was a problem submitting your form.';
+                        }
+                    })
+                    .catch(error => {
+                        messageDiv.style.display = 'block';
+                        messageDiv.style.color = '#dc3545';
+                        messageDiv.textContent = 'Oops! There was a problem submitting your form.';
+                    })
+                    .finally(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+
+                        // Hide the message after 5 seconds
+                        setTimeout(() => {
+                            messageDiv.style.display = 'none';
+                        }, 5000);
+                    });
+            });
+        }
+    };
+
+    setupFormSubmit('contactForm', 'contactFormMessage');
+    setupFormSubmit('subscribeForm', 'subscribeFormMessage');
 });

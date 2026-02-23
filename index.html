@@ -223,7 +223,8 @@
             <span class="contact-cta__label">Get In Touch</span>
             <h2 class="contact-cta__heading">We'd love to hear from you</h2>
 
-            <form class="contact-cta__form" action="https://formsubmit.co/hello@nimadifarms.com" method="POST">
+            <form class="contact-cta__form" id="contactForm" action="https://formsubmit.co/hello@nimadifarms.com"
+                method="POST">
                 <!-- FormSubmit Configuration -->
                 <input type="hidden" name="_subject" value="New Contact Form Submission - Nimadi Farms">
                 <input type="hidden" name="_captcha" value="false">
@@ -256,6 +257,9 @@
                 </div>
 
                 <button type="submit" class="btn contact-cta__submit">Submit</button>
+                <div id="contactFormMessage"
+                    style="display: none; text-align: center; color: #0c4028; font-weight: 600; font-family: var(--font-body); margin-top: 10px;">
+                    Your Message is Submitted.</div>
             </form>
         </div>
     </section>
@@ -279,13 +283,17 @@
                 <p class="footer__subtext">Subscribe for special offers, newsletters<br>and become a part of our
                     movement</p>
 
-                <form class="footer__subscribe" action="https://formsubmit.co/hello@nimadifarms.com" method="POST">
+                <form class="footer__subscribe" id="subscribeForm" action="https://formsubmit.co/hello@nimadifarms.com"
+                    method="POST">
                     <!-- FormSubmit Configuration -->
                     <input type="hidden" name="_subject" value="New Newsletter Subscription - Nimadi Farms">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="email" name="email" placeholder="Your e-mail" required>
                     <button type="submit" aria-label="Subscribe">Subscribe</button>
                 </form>
+                <div id="subscribeFormMessage"
+                    style="display: none; color: #1b3d30; font-weight: 600; font-family: var(--font-body); margin-bottom: 24px; font-size: 0.9rem;">
+                    Your Message is Submitted.</div>
 
                 <div class="footer__socials" style="margin-top: 24px;">
 
