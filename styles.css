@@ -1321,8 +1321,9 @@ img {
     .hero__content {
         flex-direction: column;
         padding: 40px 24px;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
+        text-align: center;
         height: 100%;
         gap: 24px;
     }
