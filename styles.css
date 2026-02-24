@@ -519,6 +519,12 @@ img {
     animation-delay: 0.45s;
 }
 
+@media (max-width: 768px) {
+    .tagline-sub {
+        margin-top: 4px;
+    }
+}
+
 /* ============================================
    ABOUT SECTION
    ============================================ */
@@ -618,7 +624,8 @@ img {
     }
 
     .about__body {
-        padding-top: 32px;
+        margin-top: 16px;
+        padding-top: 0;
     }
 
     .about__right {
@@ -766,8 +773,42 @@ img {
 
 @media (max-width: 600px) {
     .features__grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        padding-bottom: 24px;
+        /* Space for scrollbar */
+        padding-left: 10px;
+        /* Slight inset for first card */
+        padding-right: 10px;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        margin: 0 -20px;
+        /* Bleed out of the container padding slightly */
+    }
+
+    .features__grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .features__grid::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        margin: 0 40px;
+    }
+
+    .features__grid::-webkit-scrollbar-thumb {
+        background: rgba(12, 64, 40, 0.6);
+        border-radius: 4px;
+    }
+
+    .feature-card {
+        flex: 0 0 85%;
+        /* Shows majority of the card + a hint of the next */
+        scroll-snap-align: center;
+        aspect-ratio: 4 / 5;
+        /* Slightly adjust aspect ratio for mobile focus */
     }
 }
 
@@ -993,8 +1034,21 @@ img {
 }
 
 @media (max-width: 768px) {
+    .video-section {
+        margin-bottom: 56px;
+    }
+
+    .features-section {
+        padding: 56px 20px;
+        margin-bottom: 0;
+    }
+
+    .products-section {
+        padding: 56px 20px;
+    }
+
     .contact-cta {
-        padding: 64px 20px;
+        padding: 56px 20px;
     }
 
     .contact-cta__form {
@@ -1037,10 +1091,7 @@ img {
 
 @media (max-width: 768px) {
     .sticky-contact-btn {
-        bottom: 20px;
-        right: 20px;
-        width: 48px;
-        height: 48px;
+        display: none;
     }
 }
 
